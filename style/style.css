@@ -1,0 +1,853 @@
+:root {
+	/* Primary */
+	--soft-blue: hsl(243, 86%, 85%);
+	--dark-blue: hsl(243, 87%, 12%);
+
+	/* Accent */
+	--green: hsl(163, 95%, 43%);
+
+	/* Neutral */
+	--light-gray: hsl(106, 0%, 98%);
+	--gray: hsl(0, 0%, 50%);
+	--dark-gray: hsl(0, 0%, 17%);
+
+	/* Fonts */
+	--headings: 'Raleway', sans-serif;
+	--body: 'Open Sans', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--body);
+}
+
+h1 {
+	color: var(--dark-blue);
+	font-family: var(--headings);
+	font-weight: 700;
+	font-size: 1.5em;
+	line-height: 1.2;
+	margin-bottom: 1em;
+}
+
+h2 {
+	color: var(--dark-blue);
+	font-family: var(--headings);
+	font-weight: 700;
+	font-size: 1.5em;
+	line-height: 1.2;
+	margin-bottom: 1em;
+}
+
+span {
+	display: inline;
+}
+
+/** Hero **/
+
+.hero {
+	height: 60vh;
+}
+
+.bg-blue {
+	display: none;
+}
+
+.bg-blue-mobile {
+	width: 240px;
+	height: 180px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.illustration {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	left: 20%;
+	top: 22%;
+}
+
+/** Header NAV **/
+
+nav {
+	position: relative;
+	/* margin-bottom: 3em; */
+	margin-left: 1em;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	margin-top: 1.5em;
+}
+
+.logo {
+	width: 110px;
+	height: 35px;
+}
+
+.push {
+	margin-left: 3.5em;
+}
+
+.signing {
+	width: 80px;
+	height: 30px;
+	color: var(--light-gray);
+	font-size: 1em;
+	border: none;
+	outline: none;
+	background: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.signing:hover {
+	background: var(--green);
+	font-weight: 600;
+	transition: 0.3s;
+	box-shadow: 2px 2px 10px var(--light-gray);
+}
+
+/** Main **/
+
+.main-container {
+	margin: 1.5em;
+	text-align: center;
+}
+
+.main-container p {
+	color: var(--dark-gray);
+	line-height: 1.5;
+	font-size: 1em;
+	color: var(--gray);
+}
+
+.start {
+	width: 80%;
+	height: 50px;
+	margin-top: 3em;
+	color: var(--light-gray);
+	font-weight: 700;
+	background: var(--green);
+	font-size: 1em;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px var(--dark-gray);
+	cursor: pointer;
+}
+
+.start:hover {
+	background: var(--dark-blue);
+	box-shadow: 2px 2px 10px var(--green);
+	transition: all 0.3s;
+}
+
+/** Benefits **/
+
+.gray-background {
+	width: 100%;
+	min-height: 220vh;
+	background: var(--light-gray);
+	clip-path: polygon(
+		20% 8%,
+		100% 20%,
+		100% 25%,
+		100% 75%,
+		80% 100%,
+		0% 80%,
+		0% 75%,
+		0% 25%
+	);
+	position: absolute;
+	z-index: -1;
+}
+
+.benefits {
+	text-align: center;
+	min-height: 100vh;
+	margin: 8em 1.5em 0 1.5em;
+}
+
+.benefits-intro h2 {
+	padding-top: 10em;
+}
+
+.benefits-intro p {
+	font-size: 1.1em;
+	color: var(--gray);
+	margin-bottom: 5em;
+}
+
+.grid-3 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 100px;
+	text-align: center;
+}
+
+.grid-3 p {
+	font-weight: 700;
+	font-size: 1.5em;
+	padding-top: 1.5em;
+	color: var(--dark-blue);
+}
+
+/** Connection **/
+
+.connection {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.connection-intro {
+	margin-top: 20em;
+	text-align: center;
+	font-size: 1.1em;
+	color: var(--gray);
+}
+
+.connection-intro p {
+	margin-top: 2em;
+}
+
+.grid-6 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	grid-gap: 50px;
+	margin: 5em 1.5em 0 1.5em;
+}
+
+.column h3 {
+	margin-bottom: 10px;
+	margin-top: 25px;
+	text-align: center;
+	font-size: 2em;
+}
+
+.column p {
+	padding: 1em;
+	font-size: 1em;
+	color: var(--gray);
+	text-align: center;
+}
+
+.column a {
+	text-decoration: none;
+	color: var(--dark-blue);
+	margin-top: 20px;
+}
+
+.column a:hover {
+	background-color: var(--dark-blue);
+	color: var(--light-gray);
+	padding: 0.1em;
+	transition: all 0.3s;
+	border-radius: 3px;
+}
+
+.app-icon {
+	width: 100%;
+	border: solid 1.5px var(--gray);
+	padding: 3em;
+	box-shadow: 2px 2px 8px var(--soft-blue) inset;
+}
+
+.app-info {
+	padding: 2em;
+	border: solid 1.5px var(--gray);
+	box-shadow: 2px 2px 8px var(--soft-blue) inset;
+}
+
+/** Get Started **/
+
+.get-started {
+	text-align: center;
+	margin: 8em 1.5em 0 1.5em;
+	/* margin: 0 auto; */
+}
+
+.get-started p {
+	color: var(--gray);
+	font-size: 1.1em;
+	margin-bottom: 2em;
+}
+
+.get-started button {
+	width: 80%;
+	margin-bottom: 10em;
+}
+
+/** Footer **/
+
+.wrapper {
+	background: var(--dark-blue);
+	color: var(--light-gray);
+	display: grid;
+	height: 100%;
+	width: 100%;
+}
+
+.wrapper h3 {
+	font-size: 1em;
+}
+
+.left {
+	width: 100vw;
+	margin-top: 5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.updates {
+	margin-top: 2em;
+}
+
+.join {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.join input {
+	width: 250px;
+	height: 45px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+.join button {
+	margin-left: 10px;
+	width: 200px;
+	height: 45px;
+	color: var(--light-gray);
+	background-color: var(--green);
+	font-size: 1.2em;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.join button:hover {
+	background-color: var(--dark-gray);
+	box-shadow: 2px 2px 10px var(--green);
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.company-info {
+	margin-top: 2em;
+	line-height: 2;
+}
+
+.company-info ul {
+	list-style: none;
+}
+
+.company-info-icon {
+	margin-right: 1em;
+}
+
+.right {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 3em;
+	margin-left: 1.5em;
+	margin-top: 5em;
+}
+
+.right ul {
+	list-style: none;
+}
+
+.right .bold {
+	font-weight: 700;
+	font-size: 1.3em;
+	margin-bottom: 1.5em;
+}
+
+.right li {
+	line-height: 2;
+	width: 150px;
+}
+
+.right a {
+	text-decoration: none;
+	color: var(--light-gray);
+}
+
+.right a:hover {
+	background-color: var(--green);
+	color: var(--light-gray);
+	font-weight: 600;
+	padding: 0.5em;
+	border-radius: 3px;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin: 5em 1.5em 1em 1.5em;
+}
+
+.attribution span {
+	display: block;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+/*! Screen from 600px !*/
+
+@media (min-width: 600px) {
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	span {
+		display: block;
+	}
+
+	/** Hero **/
+
+	.hero {
+		height: 80vh;
+	}
+
+	.bg-blue {
+		display: none;
+	}
+
+	.bg-blue-mobile {
+		display: block;
+		width: 50%;
+	}
+
+	.illustration {
+		width: 220px;
+		height: 220px;
+		position: absolute;
+		left: 30%;
+		top: 25%;
+	}
+
+	/** Header NAV **/
+
+	.logo {
+		width: 120px;
+		height: 40px;
+	}
+
+	.push {
+		margin-left: 15em;
+	}
+
+	.signing {
+		width: 120px;
+		height: 40px;
+		margin-right: 20px;
+		font-size: 1.1em;
+	}
+
+	/** Main **/
+
+	.main-container {
+		margin-top: 5em;
+	}
+
+	.main-container h1 {
+		font-size: 1.8em;
+		margin-bottom: 1.5em;
+	}
+
+	.main-container p {
+		font-size: 1.1em;
+		margin-bottom: 1.5em;
+	}
+
+	.start {
+		width: 50%;
+	}
+
+	/** Benefits **/
+
+	.gray-background {
+		position: absolute;
+		top: 230%;
+		min-height: 400vh;
+	}
+
+	.benefits {
+		text-align: center;
+		min-height: 100vh;
+		margin: 1em 1.5em 0 1.5em;
+	}
+
+	.benefits-intro h2 {
+		padding-top: 10em;
+	}
+
+	.benefits-intro p {
+		font-size: 1.1em;
+		color: var(--gray);
+		margin-bottom: 5em;
+	}
+
+	.grid-3 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 120px;
+		text-align: center;
+	}
+
+	.grid-3 p {
+		font-weight: 700;
+		font-size: 1.5em;
+		padding-top: 1.5em;
+		color: var(--dark-blue);
+	}
+
+	/** Connection **/
+
+	.connection-intro {
+		margin-top: 25em;
+		margin-left: 1.5em;
+		font-size: 1.1em;
+	}
+
+	.connection-intro p {
+		font-size: 1em;
+		margin-top: 3em;
+	}
+
+	.grid-6 {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		grid-gap: 30px;
+	}
+
+	.app-info {
+		padding: 2em;
+		border: solid 1.5px var(--gray);
+		box-shadow: 2px 2px 8px var(--soft-blue) inset;
+	}
+
+	/** Get Started **/
+
+	.get-started {
+		width: 70%;
+		margin: 0 auto;
+		margin-top: 10em;
+	}
+
+	.get-started span {
+		display: inline;
+	}
+
+	.get-started button {
+		width: 50%;
+	}
+}
+
+/*! Screen from 800px !*/
+@media (min-width: 800px) {
+	span {
+		display: inline;
+	}
+
+	/** Hero **/
+
+	.bg-blue {
+		display: block;
+		position: absolute;
+		right: 0;
+		height: 70vh;
+	}
+
+	.bg-blue-mobile {
+		display: none;
+	}
+
+	.illustration {
+		width: 300px;
+		height: 300px;
+		position: absolute;
+		left: 50%;
+		top: 25%;
+	}
+
+	/** Header NAV **/
+	nav {
+		padding-top: 2em;
+	}
+
+	.logo {
+		width: 150px;
+		height: 50px;
+	}
+
+	.push {
+		margin-left: 17em;
+	}
+
+	.signing {
+		font-size: 1.3em;
+	}
+
+	/** Benefits **/
+
+	.gray-background {
+		top: 80%;
+	}
+
+	.benefits-intro h2 {
+		padding-top: 8em;
+	}
+
+	/** Connection **/
+
+	.connection-intro {
+		margin-top: 20em;
+	}
+
+	.connection-intro p {
+		margin-bottom: 7em;
+	}
+}
+
+/*! Screen from 1000px !*/
+@media (min-width: 1000px) {
+	/** Hero **/
+
+	.bg-blue {
+		height: 80vh;
+	}
+
+	.illustration {
+		left: 60%;
+	}
+
+	/** Header NAV **/
+
+	.push {
+		margin-left: 25em;
+		margin-right: 3em;
+	}
+
+	/** Main Container **/
+
+	.main-container {
+		position: absolute;
+		top: 20%;
+		width: 40%;
+		text-align: left;
+	}
+
+	/** Benefits **/
+
+	.gray-background {
+		top: 50%;
+		min-height: 230vh;
+	}
+
+	/** Footer **/
+
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		flex: 1;
+		height: 80vh;
+	}
+
+	.left {
+		width: 50%;
+	}
+
+	.wrapper h3 {
+		font-size: 1.3em;
+		font-weight: 600;
+		margin-bottom: 1em;
+	}
+
+	.logo-white {
+		width: 200px;
+		height: 65px;
+	}
+
+	.updates {
+		margin-top: 3em;
+	}
+
+	.right {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex: 1;
+		margin-top: 12em;
+	}
+
+	.right .bold {
+		font-size: 1.5em;
+	}
+
+	.right li {
+		line-height: 2;
+		width: 150px;
+		font-size: 1em;
+	}
+
+	.attribution {
+		position: absolute;
+		text-align: left;
+		margin-top: 45em;
+	}
+}
+
+/*! Screen from 1200px !*/
+
+@media (min-width: 1200px) {
+	/** Hero **/
+
+	.hero {
+		height: 100vh;
+	}
+
+	.bg-blue {
+		height: 100vh;
+		width: 55%;
+	}
+
+	.bg-blue-mobile {
+		display: none;
+	}
+
+	.illustration {
+		width: 400px;
+		height: 400px;
+		position: absolute;
+		left: 55%;
+		top: 30%;
+	}
+
+	/** Header NAV **/
+
+	.logo {
+		width: 150px;
+		height: 50px;
+	}
+
+	.push {
+		margin-left: 30em;
+		margin-right: 2em;
+	}
+
+	.signing {
+		width: 150px;
+		height: 50px;
+		font-size: 1.5em;
+	}
+
+	/** Main **/
+	.start {
+		width: 80%;
+	}
+
+	/** Benefit **/
+
+	.gray-background {
+		top: 100%;
+	}
+
+	/** Connection **/
+
+	.connection {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.connection-intro {
+		width: 37%;
+		text-align: left;
+		margin-top: 35em;
+		margin-right: 3em;
+	}
+
+	#gsuite {
+		margin-top: 50px;
+	}
+
+	.down {
+		margin-top: 120px;
+	}
+
+	.up {
+		margin-top: -75px;
+	}
+
+	/** Get Started **/
+
+	.get-started {
+		width: 50%;
+		margin: 0 auto;
+		margin-top: 12em;
+	}
+
+	.get-started button {
+		margin-bottom: 10em;
+	}
+
+	/** Footer **/
+
+	.wrapper h3 {
+		font-size: 1.5em;
+	}
+
+	.logo-white {
+		width: 200px;
+		height: 65px;
+	}
+
+	.updates {
+		margin-top: 3em;
+	}
+
+	.right {
+		margin-top: 11.5em;
+	}
+
+	.right .bold {
+		font-size: 1.7em;
+	}
+}
+
+/*! Screen from 1400px !*/
+
+@media (min-width: 1400px) {
+	.push {
+		margin-left: 35em;
+	}
+
+	.illustration {
+		left: 65%;
+	}
+
+	.main-container h1 {
+		font-size: 2.2em;
+	}
+}
