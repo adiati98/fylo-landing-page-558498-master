@@ -27,18 +27,18 @@ h1 {
 	color: var(--dark-blue);
 	font-family: var(--headings);
 	font-weight: 700;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	line-height: 1.2;
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 }
 
 h2 {
 	color: var(--dark-blue);
 	font-family: var(--headings);
 	font-weight: 700;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	line-height: 1.2;
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 }
 
 span {
@@ -76,14 +76,14 @@ span {
 nav {
 	position: relative;
 	/* margin-bottom: 3em; */
-	margin-left: 1em;
+	margin-left: 1rem;
 }
 
 nav ul {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	margin-top: 1.5em;
+	margin-top: 1.5rem;
 }
 
 .logo {
@@ -92,14 +92,14 @@ nav ul {
 }
 
 .push {
-	margin-left: 3.5em;
+	margin-left: 3.5rem;
 }
 
 .signing {
 	width: 80px;
 	height: 30px;
 	color: var(--light-gray);
-	font-size: 1em;
+	font-size: 1rem;
 	border: none;
 	outline: none;
 	background: none;
@@ -117,25 +117,25 @@ nav ul {
 /** Main **/
 
 .main-container {
-	margin: 1.5em;
+	margin: 1.5rem;
 	text-align: center;
 }
 
 .main-container p {
 	color: var(--dark-gray);
 	line-height: 1.5;
-	font-size: 1em;
+	font-size: 1rem;
 	color: var(--gray);
 }
 
 .start {
 	width: 80%;
 	height: 50px;
-	margin-top: 3em;
+	margin-top: 3rem;
 	color: var(--light-gray);
 	font-weight: 700;
 	background: var(--green);
-	font-size: 1em;
+	font-size: 1rem;
 	border: none;
 	outline: none;
 	border-radius: 5px;
@@ -172,17 +172,17 @@ nav ul {
 .benefits {
 	text-align: center;
 	min-height: 100vh;
-	margin: 8em 1.5em 0 1.5em;
+	margin: 8rem 1.5rem 0 1.5rem;
 }
 
 .benefits-intro h2 {
-	padding-top: 10em;
+	padding-top: 10rem;
 }
 
 .benefits-intro p {
-	font-size: 1.1em;
+	font-size: 1.1rem;
 	color: var(--gray);
-	margin-bottom: 5em;
+	margin-bottom: 5rem;
 }
 
 .grid-3 {
@@ -194,8 +194,8 @@ nav ul {
 
 .grid-3 p {
 	font-weight: 700;
-	font-size: 1.5em;
-	padding-top: 1.5em;
+	font-size: 1.5rem;
+	padding-top: 1.5rem;
 	color: var(--dark-blue);
 }
 
@@ -203,37 +203,37 @@ nav ul {
 
 .connection {
 	margin: 0 auto;
-	width: 70%;
+	width: 80%;
 }
 
 .connection-intro {
-	margin-top: 20em;
+	margin-top: 20rem;
 	text-align: center;
-	font-size: 1.1em;
+	font-size: 1.1rem;
 	color: var(--gray);
 }
 
 .connection-intro p {
-	margin-top: 2em;
+	margin-top: 2rem;
 }
 
 .grid-6 {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 	grid-gap: 50px;
-	margin: 5em 1.5em 0 1.5em;
+	margin: 5rem 1.5rem 0 1.5rem;
 }
 
 .column h3 {
 	margin-bottom: 10px;
 	margin-top: 25px;
 	text-align: center;
-	font-size: 2em;
+	font-size: 2rem;
 }
 
 .column p {
-	padding: 1em;
-	font-size: 1em;
+	padding: 1rem;
+	font-size: 1rem;
 	color: var(--gray);
 	text-align: center;
 }
@@ -247,7 +247,7 @@ nav ul {
 .column a:hover {
 	background-color: var(--dark-blue);
 	color: var(--light-gray);
-	padding: 0.1em;
+	padding: 0.1rem;
 	transition: all 0.3s;
 	border-radius: 3px;
 }
@@ -255,33 +255,33 @@ nav ul {
 .app-icon {
 	width: 100%;
 	border: solid 1.5px var(--gray);
-	padding: 3em;
-	box-shadow: 2px 2px 8px var(--soft-blue) inset;
+	padding: 3rem;
+	box-shadow: 2px 2px 8px var(--light-gray) inset;
 }
 
 .app-info {
-	padding: 2em;
+	padding: 2rem;
 	border: solid 1.5px var(--gray);
-	box-shadow: 2px 2px 8px var(--soft-blue) inset;
+	box-shadow: 2px 2px 8px var(--light-gray) inset;
 }
 
 /** Get Started **/
 
 .get-started {
 	text-align: center;
-	margin: 8em 1.5em 0 1.5em;
+	margin: 8rem 1.5rem 0 1.5rem;
 	/* margin: 0 auto; */
 }
 
 .get-started p {
 	color: var(--gray);
-	font-size: 1.1em;
-	margin-bottom: 2em;
+	font-size: 1.1rem;
+	margin-bottom: 2rem;
 }
 
-.get-started button {
+.start {
 	width: 80%;
-	margin-bottom: 10em;
+	margin-bottom: 10rem;
 }
 
 /** Footer **/
@@ -295,18 +295,18 @@ nav ul {
 }
 
 .wrapper h3 {
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 .left {
 	width: 100vw;
-	margin-top: 5em;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
+	margin-top: 5rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 
 .updates {
-	margin-top: 2em;
+	margin-top: 2rem;
 }
 
 .join {
@@ -328,7 +328,7 @@ nav ul {
 	height: 45px;
 	color: var(--light-gray);
 	background-color: var(--green);
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	border: none;
 	outline: none;
 	border-radius: 5px;
@@ -343,7 +343,7 @@ nav ul {
 }
 
 .company-info {
-	margin-top: 2em;
+	margin-top: 2rem;
 	line-height: 2;
 }
 
@@ -352,15 +352,15 @@ nav ul {
 }
 
 .company-info-icon {
-	margin-right: 1em;
+	margin-right: 1rem;
 }
 
 .right {
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
-	grid-gap: 3em;
-	margin-left: 1.5em;
-	margin-top: 5em;
+	grid-gap: 3rem;
+	margin-left: 1.5rem;
+	margin-top: 5rem;
 }
 
 .right ul {
@@ -369,8 +369,8 @@ nav ul {
 
 .right .bold {
 	font-weight: 700;
-	font-size: 1.3em;
-	margin-bottom: 1.5em;
+	font-size: 1.3rem;
+	margin-bottom: 1.5rem;
 }
 
 .right li {
@@ -387,14 +387,14 @@ nav ul {
 	background-color: var(--green);
 	color: var(--light-gray);
 	font-weight: 600;
-	padding: 0.5em;
+	padding: 0.5rem;
 	border-radius: 3px;
 }
 
 .attribution {
 	font-size: 11px;
 	text-align: center;
-	margin: 5em 1.5em 1em 1.5em;
+	margin: 5rem 1.5rem 1rem 1.5rem;
 }
 
 .attribution span {
@@ -405,15 +405,38 @@ nav ul {
 	color: hsl(228, 45%, 44%);
 }
 
+/*! Screen from 500px !*/
+
+@media (min-width: 500px) {
+	.bg-blue-mobile {
+		width: 300px;
+	}
+
+	.illustration {
+		left: 20%;
+	}
+
+	.push {
+		margin-left: 10rem;
+	}
+
+	.grid-6 {
+		width: 70%;
+		justify-items: center;
+		margin: 0 auto;
+		margin-top: 5rem;
+	}
+}
+
 /*! Screen from 600px !*/
 
 @media (min-width: 600px) {
 	h1 {
-		font-size: 2em;
+		font-size: 2rem;
 	}
 
 	h2 {
-		font-size: 2em;
+		font-size: 2rem;
 	}
 
 	span {
@@ -436,10 +459,10 @@ nav ul {
 	}
 
 	.illustration {
-		width: 220px;
-		height: 220px;
+		width: 280px;
+		height: 280px;
 		position: absolute;
-		left: 30%;
+		left: 25%;
 		top: 25%;
 	}
 
@@ -451,30 +474,30 @@ nav ul {
 	}
 
 	.push {
-		margin-left: 15em;
+		margin-left: 15rem;
 	}
 
 	.signing {
 		width: 120px;
 		height: 40px;
 		margin-right: 20px;
-		font-size: 1.1em;
+		font-size: 1.1rem;
 	}
 
 	/** Main **/
 
 	.main-container {
-		margin-top: 5em;
+		margin-top: 5rem;
 	}
 
 	.main-container h1 {
-		font-size: 1.8em;
-		margin-bottom: 1.5em;
+		font-size: 1.8rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.main-container p {
-		font-size: 1.1em;
-		margin-bottom: 1.5em;
+		font-size: 1.1rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.start {
@@ -492,17 +515,17 @@ nav ul {
 	.benefits {
 		text-align: center;
 		min-height: 100vh;
-		margin: 1em 1.5em 0 1.5em;
+		margin: 1rem 1.5rem 0 1.5rem;
 	}
 
 	.benefits-intro h2 {
-		padding-top: 10em;
+		padding-top: 10rem;
 	}
 
 	.benefits-intro p {
-		font-size: 1.1em;
+		font-size: 1.1rem;
 		color: var(--gray);
-		margin-bottom: 5em;
+		margin-bottom: 5rem;
 	}
 
 	.grid-3 {
@@ -514,8 +537,8 @@ nav ul {
 
 	.grid-3 p {
 		font-weight: 700;
-		font-size: 1.5em;
-		padding-top: 1.5em;
+		font-size: 1.5rem;
+		padding-top: 1.5rem;
 		color: var(--dark-blue);
 	}
 
@@ -523,25 +546,18 @@ nav ul {
 
 	.connection-intro {
 		margin-top: 25em;
-		margin-left: 1.5em;
-		font-size: 1.1em;
+		margin-left: 1.5rem;
+		font-size: 1.1rem;
 	}
 
 	.connection-intro p {
-		font-size: 1em;
-		margin-top: 3em;
+		font-size: 1rem;
+		margin-top: 3rem;
 	}
 
 	.grid-6 {
-		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 		grid-gap: 30px;
-	}
-
-	.app-info {
-		padding: 2em;
-		border: solid 1.5px var(--gray);
-		box-shadow: 2px 2px 8px var(--soft-blue) inset;
 	}
 
 	/** Get Started **/
@@ -549,15 +565,36 @@ nav ul {
 	.get-started {
 		width: 70%;
 		margin: 0 auto;
-		margin-top: 10em;
+		margin-top: 10rem;
 	}
 
 	.get-started span {
 		display: inline;
 	}
 
-	.get-started button {
+	.start {
 		width: 50%;
+	}
+}
+
+/*! Screen from 700px !*/
+@media (min-width: 700px) {
+	/** Hero **/
+
+	.bg-blue-mobile {
+		width: 400px;
+		height: 250px;
+	}
+	.illustration {
+		width: 300px;
+		height: 300px;
+		left: 25%;
+	}
+
+	/** Header Nav **/
+
+	.push {
+		margin-left: 20rem;
 	}
 }
 
@@ -573,7 +610,8 @@ nav ul {
 		display: block;
 		position: absolute;
 		right: 0;
-		height: 70vh;
+		width: 420px;
+		height: 85vh;
 	}
 
 	.bg-blue-mobile {
@@ -584,13 +622,13 @@ nav ul {
 		width: 300px;
 		height: 300px;
 		position: absolute;
-		left: 50%;
+		left: 58%;
 		top: 25%;
 	}
 
 	/** Header NAV **/
 	nav {
-		padding-top: 2em;
+		padding-top: 2rem;
 	}
 
 	.logo {
@@ -599,11 +637,24 @@ nav ul {
 	}
 
 	.push {
-		margin-left: 17em;
+		margin-left: 22rem;
 	}
 
 	.signing {
-		font-size: 1.3em;
+		font-size: 1.3rem;
+	}
+
+	/** Main Container **/
+
+	.main-container {
+		position: absolute;
+		top: 20%;
+		width: 40%;
+		text-align: left;
+	}
+
+	.start {
+		width: 100%;
 	}
 
 	/** Benefits **/
@@ -613,17 +664,17 @@ nav ul {
 	}
 
 	.benefits-intro h2 {
-		padding-top: 8em;
+		padding-top: 8rem;
 	}
 
 	/** Connection **/
 
 	.connection-intro {
-		margin-top: 20em;
+		margin-top: 20rem;
 	}
 
 	.connection-intro p {
-		margin-bottom: 7em;
+		margin-bottom: 7rem;
 	}
 }
 
@@ -636,23 +687,14 @@ nav ul {
 	}
 
 	.illustration {
-		left: 60%;
+		left: 65%;
 	}
 
 	/** Header NAV **/
 
 	.push {
-		margin-left: 25em;
-		margin-right: 3em;
-	}
-
-	/** Main Container **/
-
-	.main-container {
-		position: absolute;
-		top: 20%;
-		width: 40%;
-		text-align: left;
+		margin-left: 38rem;
+		margin-right: 3rem;
 	}
 
 	/** Benefits **/
@@ -676,9 +718,9 @@ nav ul {
 	}
 
 	.wrapper h3 {
-		font-size: 1.3em;
+		font-size: 1.3rem;
 		font-weight: 600;
-		margin-bottom: 1em;
+		margin-bottom: 1rem;
 	}
 
 	.logo-white {
@@ -687,7 +729,7 @@ nav ul {
 	}
 
 	.updates {
-		margin-top: 3em;
+		margin-top: 3rem;
 	}
 
 	.right {
@@ -695,23 +737,23 @@ nav ul {
 		flex-direction: row;
 		justify-content: space-evenly;
 		flex: 1;
-		margin-top: 12em;
+		margin-top: 12rem;
 	}
 
 	.right .bold {
-		font-size: 1.5em;
+		font-size: 1.5rem;
 	}
 
 	.right li {
 		line-height: 2;
 		width: 150px;
-		font-size: 1em;
+		font-size: 1rem;
 	}
 
 	.attribution {
 		position: absolute;
 		text-align: left;
-		margin-top: 45em;
+		margin-top: 32rem;
 	}
 }
 
@@ -749,17 +791,18 @@ nav ul {
 	}
 
 	.push {
-		margin-left: 30em;
-		margin-right: 2em;
+		margin-left: 42rem;
+		margin-right: 2rem;
 	}
 
 	.signing {
 		width: 150px;
 		height: 50px;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 	}
 
 	/** Main **/
+
 	.start {
 		width: 80%;
 	}
@@ -784,8 +827,8 @@ nav ul {
 	.connection-intro {
 		width: 37%;
 		text-align: left;
-		margin-top: 35em;
-		margin-right: 3em;
+		margin-top: 35rem;
+		margin-right: 3rem;
 	}
 
 	#gsuite {
@@ -805,17 +848,17 @@ nav ul {
 	.get-started {
 		width: 50%;
 		margin: 0 auto;
-		margin-top: 12em;
+		margin-top: 12rem;
 	}
 
 	.get-started button {
-		margin-bottom: 10em;
+		margin-bottom: 10rem;
 	}
 
 	/** Footer **/
 
 	.wrapper h3 {
-		font-size: 1.5em;
+		font-size: 1.5rem;
 	}
 
 	.logo-white {
@@ -824,15 +867,15 @@ nav ul {
 	}
 
 	.updates {
-		margin-top: 3em;
+		margin-top: 3rem;
 	}
 
 	.right {
-		margin-top: 11.5em;
+		margin-top: 11.5rem;
 	}
 
 	.right .bold {
-		font-size: 1.7em;
+		font-size: 1.7rem;
 	}
 }
 
@@ -840,7 +883,8 @@ nav ul {
 
 @media (min-width: 1400px) {
 	.push {
-		margin-left: 35em;
+		margin-left: 55rem;
+		margin-right: 3rem;
 	}
 
 	.illustration {
@@ -848,6 +892,11 @@ nav ul {
 	}
 
 	.main-container h1 {
-		font-size: 2.2em;
+		font-size: 2.2rem;
+		margin-bottom: 3rem;
+	}
+
+	.connection-intro p {
+		font-size: 1.1rem;
 	}
 }
