@@ -45,6 +45,10 @@ span {
 	display: inline;
 }
 
+.container {
+	overflow: hidden;
+}
+
 /** Hero **/
 
 .hero {
@@ -594,7 +598,7 @@ nav ul {
 	/** Header Nav **/
 
 	.push {
-		margin-left: 20rem;
+		margin-left: 18rem;
 	}
 }
 
